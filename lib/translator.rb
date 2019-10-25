@@ -1,5 +1,6 @@
 require "yaml"
 file_path = './lib/emoticons.yml'
+result = translation ? translation : "Sorry, that emoticon was not found"
 
 def load_library(file_path)
   emoticon_data = YAML.load_file(file_path)
