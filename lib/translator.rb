@@ -1,8 +1,5 @@
 require "yaml"
 file_path = './lib/emoticons.yml'
-japanese_translation = load_library(file_path)[:get_emoticon][emoticon]
-english_translation = load_library(file_path)[:get_meaning][emoticon]
-result = translation ? translation : "Sorry, that emoticon was not found"
 
 def load_library(file_path)
   emoticon_data = YAML.load_file(file_path)
