@@ -14,6 +14,10 @@ def load_library(file_path)
   new_hash
 end
 
+japanese_translation = load_library(file_path)[:get_emoticon][emoticon]
+english_translation = load_library(file_path)[:get_meaning][emoticon]
+result = translation ? translation : "Sorry, that emoticon was not found"
+
 def get_japanese_emoticon(file_path, emoticon)
   japanese_translation
   result
